@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "particles.js": "^2.0.0",
+    "typewriter-effect": "^2.18.2"
+  }
+}

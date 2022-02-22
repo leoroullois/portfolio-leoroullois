@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Léo Roullois - Freelance développeur web front end</title>
+		<meta name="robots" content="all" />
+		<meta
+			name="description"
+			content="Léo Roullois développeur front end basé sur Paris - React"
+		/>
+		<!-- Google fonts -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+		<link rel="stylesheet" href="css/styles.css" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi&family=Montserrat&family=Roboto&display=swap"
+			rel="stylesheet"
+		/>
+
+		<script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+	</head>
+	<body>
+		<div id="loader">
+			<img src="img/oval.svg" alt="Loading" id="loader-icon" />
+		</div>
+		<nav id="navbar">
+			<div id="nav-left">
+				<div>
+					<a href="#home" id="profile-pic">
+						<img src="../img/pdp.png" alt="Photo de profil" />
+					</a>
+					<p>Léo <span>Roullois</span></p>
+				</div>
+				<ion-icon name="reorder-three" id="hamburger-icon"></ion-icon>
+			</div>
+			<div id="nav-right">
+				<a class="nav-link" id="home-link" href="#home">Accueil</a>
+				<a class="nav-link" id="skills-link" href="#skills">Mes compétences</a>
+				<a class="nav-link" id="about-link" href="#about">À propos</a>
+				<a class="nav-link" id="portfolio-link" href="#portfolio">Portfolio</a>
+				<a class="nav-link" id="contact-link" href="#contact"> Me contacter </a>
+			</div>
+		</nav>
+		<header class="home" id="home">
+			<div id="home-content">
+				<div id="welcome-button">
+					<ion-icon name="code-slash-outline"></ion-icon>
+					<p>Bonjour, bienvenue sur mon portfolio !</p>
+				</div>
+				<h1>
+					👋
+					<span id="main-title"
+						>Je suis Léo, un développeur
+						<span style="color: #b33939">front-end</span> !
+					</span>
+				</h1>
+				<p id="description">
+					Je suis développeur front-end ainsi qu'étudiant à
+					<span class="strong">ESIEE Paris</span>. J'ai donc un panel de
+					connaissance suffisamment large pour concevoir des applications web
+					innovantes. De plus, je suis ambitieux, tourné vers l'action et prêt à relever des défis de taille
+					: laissez moi vous accompagner sur tout le front-end de votre projet.
+				</p>
+				<a href="#contact" id="learn-more-btn">
+					<p>Me contacter</p>
+					<ion-icon name="caret-down-outline"></ion-icon>
+				</a>
+			</div>
+			<a id="chevron-down">
+				<ion-icon name="chevron-down-outline"></ion-icon>
+			</a>
+			<div id="background"></div>
+			<div id="particles-js"></div>
+		</header>
+		<main id="wrapper">
+			<section id="skills" class="load-hidden">
+				<svg
+					id="bg-rect-1"
+					class="hidden lg:block absolute top-1/2 transform -translate-y-1/2 left-full -translate-x-1/2"
+					width="404"
+					height="784"
+					fill="none"
+					viewBox="0 0 404 784"
+				>
+					<defs>
+						<pattern
+							id="56409614-3d62-4985-9a10-7ca758a8f4f0"
+							x="0"
+							y="0"
+							width="20"
+							height="20"
+							patternUnits="userSpaceOnUse"
+						>
+							<rect
+								x="0"
+								y="0"
+								width="4"
+								height="4"
+								class="text-gray-200"
+								fill="currentColor"
+							></rect>
+						</pattern>
+					</defs>
+					<rect
+						width="404"
+						height="784"
+						fill="url(#56409614-3d62-4985-9a10-7ca758a8f4f0)"
+					></rect>
+				</svg>
+				<svg
+					id="bg-rect-2"
+					class="hidden lg:block absolute top-1/2 transform -translate-y-1/2 left-full -translate-x-1/2"
+					width="404"
+					height="784"
+					fill="none"
+					viewBox="0 0 404 784"
+				>
+					<defs>
+						<pattern
+							id="56409614-3d62-4985-9a10-7ca758a8f4f0"
+							x="0"
+							y="0"
+							width="20"
+							height="20"
+							patternUnits="userSpaceOnUse"
+						>
+							<rect
+								x="0"
+								y="0"
+								width="4"
+								height="4"
+								class="text-gray-200"
+								fill="currentColor"
+							></rect>
+						</pattern>
+					</defs>
+					<rect
+						width="404"
+						height="784"
+						fill="url(#56409614-3d62-4985-9a10-7ca758a8f4f0)"
+					></rect>
+				</svg>
+				<button class="desc-btn">Mes compétences</button>
+				<h2>Quelles sont les technologies que j'utilise ?</h2>
+				<h3>📚 Langages de programmation</h3>
+				<article class="skill-box">
+					<img src="./img/skills/html_css.png" alt="HTML and CSS logo" />
+					<h4>HTML & CSS</h4>
+					<div class="note">
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+					</div>
+				</article>
+				<article class="skill-box">
+					<img src="./img/skills/javascript.svg" alt="JavaScript logo" />
+					<h4>JavaScript</h4>
+					<div class="note">
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+					</div>
+				</article>
+				<article class="skill-box">
+					<img src="./img/skills/typescript.svg" alt="TypeScript logo" />
+					<h4>TypeScript</h4>
+					<div class="note">
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+					</div>
+				</article>
+				<article class="skill-box">
+					<img src="./img/skills/nodejs.svg" alt="NodeJS logo" />
+					<h4>Node JS</h4>
+					<div class="note">
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+					</div>
+				</article>
+				<article class="skill-box">
+					<img src="./img/skills/c.svg" alt="C logo" />
+					<h4>C</h4>
+					<div class="note">
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+					</div>
+				</article>
+				<article class="skill-box">
+					<img src="./img/skills/java.svg" alt="Java logo" />
+					<h4>Java</h4>
+					<div class="note">
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+					</div>
+				</article>
+
+				<h3>🚀 Librairies et frameworks</h3>
+				<article class="skill-box">
+					<img src="./img/skills/react.svg" alt="React logo" />
+					<h4>React</h4>
+					<div class="note">
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+					</div>
+				</article>
+				<article class="skill-box">
+					<img src="./img/skills/redux.svg" alt="Redux logo" />
+					<h4>Redux</h4>
+					<div class="note">
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+					</div>
+				</article>
+				<article class="skill-box">
+					<img src="./img/skills/nextjs.svg" alt="Next js logo" />
+					<h4>Next</h4>
+					<div class="note">
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+					</div>
+				</article>
+				<article class="skill-box">
+					<img src="./img/skills/sass.svg" alt="Sass logo" />
+					<h4>Sass</h4>
+					<div class="note">
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+					</div>
+				</article>
+				<article class="skill-box">
+					<img src="./img/skills/d3.svg" alt="D3 logo" />
+					<h4>D3</h4>
+					<div class="note">
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+					</div>
+				</article>
+				<article class="skill-box">
+					<img src="./img/skills/jquery.svg" alt="jQuery logo" />
+					<h4>jQuery</h4>
+					<div class="note">
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon class="ok" name="star"></ion-icon>
+						<ion-icon name="star"></ion-icon>
+					</div>
+				</article>
+			</section>
+			<section id="about" class="load-hidden">
+				<div class="container">
+					<h2>À propos de moi</h2>
+					<div class="bars">
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</div>
+					<p>
+						Je m'appelle Léo, j'ai 20 ans et je vie en région parisienne.
+						Actuellement développeur front-end et étudiant en
+						<a href="https://www.esiee.fr">école d'ingénieur</a>, apprendre
+						continuellement est mon principe maître. Depuis maintenant quelques
+						années, je me suis intéressé au développement web. Avec le temps, je
+						me suis spécialisé dans la librairie JavaScript
+						<span class="strong">React</span>, mais j'ai pu acquérir des
+						connaissances plus larges, notamment en back-end. Je suis disponible
+						pour vous accompagner dans vos projets front-end.
+						<!-- Je vous fournirai un code de
+						qualité, testé et facilement maintenable sur le long terme. -->
+					</p>
+					<a href="./assets/cv.pdf" id="mon-cv" target="_blank">
+						<ion-icon name="document-text-outline"></ion-icon>
+						Mon CV
+					</a>
+				</div>
+			</section>
+			<section id="portfolio" class="load-hidden">
+				<div class="container">
+					<h3>Références</h3>
+					<h2>Développement front-end</h2>
+					<div class="bars">
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</div>
+					<a
+						href="https://github.com/leoroullois/prepa-stat"
+						target="_blank"
+						class="ref"
+					>
+						<div class="ref-title">
+							<div class="icon">
+								<ion-icon name="document-attach-outline"> </ion-icon>
+							</div>
+							<h4>
+								PrépaStat
+								<span>/ 2022</span>
+							</h4>
+						</div>
+						<p class="ref-desc">
+							Ce site à été créé pour aider les élèves de CPGE dans leur
+							orientation. Il regroupe toute sorte de statistiques autour des
+							écoles, un simulateur pour les concours, les principaux
+							classements d'école d'ingénieurs...
+						</p>
+						<div class="ref-technos">
+							<p>
+								<svg stroke="#34D399" fill="none" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"
+									></path>
+								</svg>
+								React
+							</p>
+							<p>
+								<svg stroke="#34D399" fill="none" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"
+									></path>
+								</svg>
+								Redux
+							</p>
+							<p>
+								<svg stroke="#34D399" fill="none" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"
+									></path>
+								</svg>
+								TypeScript
+							</p>
+							<p>
+								<svg stroke="#34D399" fill="none" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"
+									></path>
+								</svg>
+								NodeJS
+							</p>
+						</div>
+					</a>
+					<a
+						href="https://github.com/leoroullois/chess-ts"
+						target="_blank"
+						class="ref"
+					>
+						<div class="ref-title">
+							<div class="icon">
+								<ion-icon name="document-attach-outline"> </ion-icon>
+							</div>
+							<h4>
+								Jeu d'échec
+								<span>/ 2021</span>
+							</h4>
+						</div>
+						<p class="ref-desc">
+							Création d'un site web vous permettant de jouer aux échecs en
+							local.
+						</p>
+						<div class="ref-technos">
+							<p>
+								<svg stroke="#34D399" fill="none" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"
+									></path>
+								</svg>
+								TypeScript
+							</p>
+							<p>
+								<svg stroke="#34D399" fill="none" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"
+									></path>
+								</svg>
+								SCSS
+							</p>
+						</div>
+					</a>
+					<a
+						href="https://github.com/leoroullois/drum-machine-extension"
+						target="_blank"
+						class="ref"
+					>
+						<div class="ref-title">
+							<div class="icon">
+								<ion-icon name="document-attach-outline"> </ion-icon>
+							</div>
+							<h4>
+								Drum Machine
+								<span>/ 2022</span>
+							</h4>
+						</div>
+						<p class="ref-desc">
+							Création d'une extension chrome vous permettant de jouer de la
+							musique grâce à la drum machine.
+						</p>
+						<div class="ref-technos">
+							<p>
+								<svg stroke="#34D399" fill="none" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"
+									></path>
+								</svg>
+								React
+							</p>
+						</div>
+					</a>
+					<a
+						href="https://github.com/leoroullois/clock-extension"
+						target="_blank"
+						class="ref"
+					>
+						<div class="ref-title">
+							<div class="icon">
+								<ion-icon name="document-attach-outline"> </ion-icon>
+							</div>
+							<h4>
+								25+5 clock
+								<span>/ 2022</span>
+							</h4>
+						</div>
+						<p class="ref-desc">
+							Création d'une extension chrome vous proposant la méthode de
+							concentration Pomodoro.
+						</p>
+						<div class="ref-technos">
+							<p>
+								<svg stroke="#34D399" fill="none" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"
+									></path>
+								</svg>
+								React
+							</p>
+							<p>
+								<svg stroke="#34D399" fill="none" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"
+									></path>
+								</svg>
+								Redux
+							</p>
+							<p>
+								<svg stroke="#34D399" fill="none" viewBox="0 0 24 24">
+									<path
+										stroke-linecap="round"
+										stroke-linejoin="round"
+										stroke-width="2"
+										d="M5 13l4 4L19 7"
+									></path>
+								</svg>
+								SCSS
+							</p>
+						</div>
+					</a>
+				</div>
+				<div id="portfolio-particles"></div>
+			</section>
+			<section id="contact" class="load-hidden">
+				<div class="container">
+					<h2>Travaillons ensemble</h2>
+					<div class="bars">
+						<div class="bar"></div>
+						<div class="bar"></div>
+					</div>
+					<p>
+						Vous avez un projet et vous voulez travailler avec moi ? N'hésitez
+						pas à me contacter.
+					</p>
+					<div class="contact-me">
+						<a href="./contact.html">Formulaire de contact</a>
+						<a href="mailto:leo.roullois@edu.esiee.fr"
+							>leo.roullois@edu.esiee.fr</a
+						>
+					</div>
+				</div>
+			</section>
+		</main>
+		<footer id="footer">
+			<div id="links">
+				<a href="https://twitter.com/0xLEY0" target="_blank" rel="noopener">
+					<ion-icon name="logo-twitter"></ion-icon>
+					Twitter
+				</a>
+				/
+				<a href="https://github.com/leoroullois" target="_blank" rel="noopener">
+					<ion-icon name="logo-github"></ion-icon>
+					GitHub
+				</a>
+				/
+				<a
+					href="https://www.linkedin.com/in/leoroullois/"
+					target="_blank"
+					rel="noopener"
+				>
+					<ion-icon name="logo-linkedin"></ion-icon>
+					LinkedIn
+				</a>
+			</div>
+			<p>© 2022 Léo Roullois</p>
+		</footer>
+
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+		<script src="node_modules/particles.js/particles.js"></script>
+		<script src="js/main.js" type="text/javascript"></script>
+	</body>
+</html>

@@ -1,0 +1,220 @@
+body {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  margin-top: 120px;
+  height: 100%;
+  min-height: calc(100vh - 120px);
+  margin-bottom: 0px !important;
+  padding-bottom: 0px !important;
+  position: relative;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: auto;
+  padding-bottom: 60px;
+}
+main .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1100px;
+}
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 60%;
+  text-align: justify;
+  margin-right: 30px;
+  padding: 0;
+}
+main section h1 {
+  font-family: "Roboto", sans-serif;
+  color: #1b1b1b;
+  font-weight: bold;
+  font-size: 1.9rem;
+  margin-bottom: 20px;
+  text-align: left;
+}
+main section .description-mail {
+  color: #363636;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 1.3rem;
+}
+main section .my-mail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.2rem;
+}
+main section .my-mail ion-icon {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+main section .my-mail {
+  margin-top: 20px;
+}
+main section .my-mail ion-icon {
+  color: #363636;
+  opacity: 0.6;
+}
+main section img {
+  width: 80%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  justify-self: center;
+  margin-top: 30px;
+}
+main form {
+  margin-left: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+main form span {
+  color: #b93838;
+  font-weight: bold;
+}
+main form label {
+  font-size: 1.2rem;
+}
+main form input,
+main form textarea {
+  width: 100%;
+  border: 1px solid #6b7280;
+  border-radius: 6px;
+  margin: 15px 0px;
+  padding: 10px 30px;
+}
+main form input:focus,
+main form textarea:focus {
+  border: 1px solid #b93838;
+}
+main form input:hover,
+main form textarea:hover {
+  -webkit-box-shadow: 0 0 15px #cfcfcf;
+          box-shadow: 0 0 15px #cfcfcf;
+  border: 1px solid #363636;
+}
+main form button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 50px;
+  width: 200px;
+  background-color: #cf3f3f;
+  color: #e9e9e9;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+main form button ion-icon {
+  margin-left: 20px;
+}
+main form button:hover {
+  background-color: #b93838;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+          box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+main form #message-label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content {
+  /* grow shrink basis */
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+footer {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+@media screen and (max-width: 1087px) {
+  main .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  main .wrapper section {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+  main .wrapper section h1 {
+    font-size: 1.5rem;
+  }
+  main .wrapper section .description-mail {
+    margin: 0 !important;
+  }
+  main .wrapper section .my-mail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+  main .wrapper section .my-mail ion-icon {
+    margin-bottom: 20px;
+  }
+  main .wrapper section img {
+    margin-bottom: 60px;
+    width: 40vw;
+    min-width: 300px;
+  }
+  main .wrapper form {
+    width: 100%;
+    margin-left: 0px;
+  }
+}/*# sourceMappingURL=contact.css.map */
