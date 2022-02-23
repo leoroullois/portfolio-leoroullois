@@ -174,12 +174,12 @@ a {
 		#nav-right {
 			flex-direction: column;
 			height: auto;
-			margin-top: -320px;
+			margin-top: -375px;
 			overflow: hidden;
 			width: 100%;
-			align-items: center;
 			justify-content: center;
-			transition: margin-top 0.7s ease-out;
+			align-items: center;
+			transition: margin-top 0.5s ease-out;
 			a {
 				height: 50px;
 				margin-left: 0px;
@@ -661,16 +661,16 @@ main {
 					display: flex;
 					justify-content: center;
 					align-items: center;
-					height: 50px;
-					width: 50px;
+					height: 55px;
+					width: 55px;
 					border-radius: 25px;
-					background-color: $light-blue;
-					box-shadow: $btn-shadow;
+					background-color: $main-white;
+					box-shadow: $nav-shadow;
 				}
 				ion-icon {
 					font-size: 1.9rem;
 					line-height: 2rem;
-					color: $bg-blue;
+					color: $main-black;
 				}
 			}
 			.ref-desc {
@@ -728,8 +728,8 @@ main {
 			margin: 0 auto;
 			@include bars(90px, rgb(135, 34, 73), 40px, rgb(135, 34, 73));
 			.bars .bar {
-				height: 5px!important;
-				border-radius: 2px;;
+				height: 5px !important;
+				border-radius: 2px;
 			}
 			p {
 				text-align: justify;
@@ -765,10 +765,10 @@ main {
 		border-bottom: 1px solid $light-black;
 	}
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width: 1024px) {
 	main #portfolio .ref .ref-technos {
 		justify-content: flex-start;
-		column-gap:20px;
+		column-gap: 20px;
 	}
 }
 // Responsive portfolio
