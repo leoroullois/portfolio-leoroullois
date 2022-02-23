@@ -204,6 +204,8 @@ a {
     padding: 0;
   }
   #navbar #nav-left {
+    position: relative;
+    z-index: 4;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -227,7 +229,7 @@ a {
         -ms-flex-direction: column;
             flex-direction: column;
     height: auto;
-    margin-top: -375px;
+    margin-top: -330px;
     overflow: hidden;
     width: 100%;
     -webkit-box-pack: center;
@@ -244,10 +246,15 @@ a {
     margin-left: 0px;
     line-height: 50px;
   }
+  #navbar #nav-right .nav-link::after {
+    margin-top: 10px;
+  }
   #navbar #nav-right #contact-link {
     margin-top: 10px;
   }
   #navbar .visible {
+    position: relative;
+    z-index: 3;
     padding-bottom: 15px;
     margin-top: 0px !important;
     border-bottom: 1px solid rgba(27, 27, 27, 0.15);

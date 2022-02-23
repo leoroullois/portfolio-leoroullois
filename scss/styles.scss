@@ -159,6 +159,8 @@ a {
 		justify-content: space-between;
 		padding: 0;
 		#nav-left {
+			position:relative;
+			z-index:4;
 			display: flex;
 			justify-content: space-between;
 			width: 100%;
@@ -174,7 +176,7 @@ a {
 		#nav-right {
 			flex-direction: column;
 			height: auto;
-			margin-top: -375px;
+			margin-top: -330px;
 			overflow: hidden;
 			width: 100%;
 			justify-content: center;
@@ -185,11 +187,16 @@ a {
 				margin-left: 0px;
 				line-height: 50px;
 			}
+			.nav-link::after {
+				margin-top: 10px;
+			}
 			#contact-link {
 				margin-top: 10px;
 			}
 		}
 		.visible {
+			position:relative;
+			z-index:3;
 			padding-bottom: 15px;
 			margin-top: 0px !important;
 			border-bottom: 1px solid rgba(27, 27, 27, 0.15);
