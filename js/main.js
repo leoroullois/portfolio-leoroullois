@@ -3,23 +3,17 @@ new Typewriter(mainTitle, {
 	deleteSpeed: 20,
 })
 	.changeDelay(20)
-	.typeString("My name is Léo")
+	.typeString("Je suis Léo")
 	.pauseFor(300)
-	.typeString(
-		", an <span style='color: #d35400;'>HTML</span>/<span style='color:#2980b9';>CSS</span> developer !"
-	)
+	.typeString(", développeur <span style='color:#f39c12';>JavaScript</span> !")
 	.pauseFor(1000)
-	.deleteChars(23)
+	.deleteChars(12)
 	.pauseFor(500)
-	.typeString("a <span style='color: #f39c12;'>JavaScript</span> developer !")
+	.typeString("<span style='color: #3498db;'>React</span> !")
 	.pauseFor(1000)
-	.deleteChars(24)
+	.deleteChars(7)
 	.pauseFor(500)
-	.typeString("a <span style='color: #3498db;'>React</span> developer !")
-	.pauseFor(1000)
-	.deleteChars(19)
-	.pauseFor(500)
-	.typeString("a <span style='color:#b93838;'>front-end</span> developer !")
+	.typeString("<span style='color: #b93838;'>front-end</span> !")
 	.start();
 // ? Loader
 const loader = document.querySelector("#loader");
