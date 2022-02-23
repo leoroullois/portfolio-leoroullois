@@ -71,7 +71,7 @@ main {
 		}
 	}
 	form {
-        margin-left: 60px;
+		margin-left: 60px;
 		display: flex;
 		flex-direction: column;
 		width: 100%;
@@ -126,11 +126,11 @@ main {
 	}
 }
 .content {
-    /* grow shrink basis */
-    flex: 1 0 auto;
+	/* grow shrink basis */
+	flex: 1 0 auto;
 }
 footer {
-	flex-shrink:0;
+	flex-shrink: 0;
 }
 @media screen and (max-width: 1087px) {
 	main .wrapper {
@@ -155,13 +155,13 @@ footer {
 			margin-bottom: 60px;
 			img {
 				margin-bottom: 60px;
-                width: 40vw;
-                min-width: 300px;
+				width: 40vw;
+				min-width: 300px;
 			}
 		}
 		form {
 			width: 100%;
-            margin-left: 0px;
+			margin-left: 0px;
 		}
 	}
 }

@@ -6,12 +6,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Contact - Léo ROULLOIS Développeur web freelance à Paris</title>
 		<link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="css/contact.css">
+		<link rel="stylesheet" href="css/contact.css" />
 	</head>
 	<body>
-		<div id="loader">
-			<img src="img/oval.svg" alt="Loading" id="loader-icon" />
-		</div>
 		<nav id="navbar">
 			<div id="nav-left">
 				<div>
@@ -38,48 +35,97 @@
 				</a>
 			</div>
 		</nav>
-        <main class="content">
-            <div class="wrapper">
-                <section>
-                    <h1>📪 Travaillons ensemble !</h1>
-                    <p class="description-mail">
-                        Vous voulez travailler avec moi ? Vous avez besoin d'un renseignement ? Vous voulez me poser une question ? Dans tous les cas, je tenterais de vous apporter une réponse pertinente.
-                    </p>
-                    <p class="my-mail">
-                        <ion-icon name="mail-outline"></ion-icon>
-                        roullois.leo@protonmail.com
-                    </p>
-                    <img src="./img/meeting.png" alt="People meeting.">
-                </section>
-                <form action="contact" id="contact-form">
-                    <label for="name" id="name-label">
-                        • Nom complet
-                        <span>*</span>
-                        <input type="text" name="name" id="name" placeholder="John DOE" required>
-                    </label>
-                    <label for="email" id="email-label">
-                        • Email
-                        <span>*</span>
-                        <input type="email" name="email" id="email" placeholder="exemple@email.com" required>
-                    </label>
-                    <label for="numero" id="numero-label">
-                        • Téléphone
-                        <input type="tel" name="numero" id="numero" placeholder="0607080910">
-                    </label>
-                    <label for="message" id="message-label">
-                        <p>
-                            • Message
-                        <span>*</span>
-                        </p>
-                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message :" required></textarea>
-                    </label>
-                    <button type="submit">
-                        Envoyer
-                        <ion-icon name="send-outline"></ion-icon>
-                    </button>
-                </form>
-            </div>
-        </main>
+		<main class="content">
+			<div class="wrapper">
+				<section>
+					<h1>📪 Travaillons ensemble !</h1>
+					<p class="description-mail">
+						Vous voulez travailler avec moi ? Vous avez besoin d'un
+						renseignement ? Vous voulez me poser une question ? Dans tous les
+						cas, je tenterais de vous apporter une réponse pertinente.
+					</p>
+					<p class="my-mail">
+						<ion-icon name="mail-outline"></ion-icon>
+						roullois.leo@protonmail.com
+					</p>
+					<img src="./img/meeting.png" alt="People meeting." />
+				</section>
+				<form
+					action="https://formsubmit.co/leo.roullois@edu.esiee.fr"
+					method="POST"
+					id="contact-form"
+				>
+					<input
+						type="hidden"
+						name="_next"
+						value="https://www.leoroullois.fr"
+					/>
+					<input
+						type="hidden"
+						name="_subject"
+						value="Contact depuis leoroullois.fr"
+					/>
+					<input type="hidden" name="_captcha" value="false" />
+					<input
+						type="hidden"
+						name="_autoresponse"
+						value="Votre message à bien été envoyé."
+					/>
+
+					<input type="text" name="_honey" style="display: none" />
+
+					<label for="name" id="name-label">
+						• Nom complet
+						<span>*</span>
+						<input
+							type="text"
+							name="name"
+							id="name"
+							placeholder="John DOE"
+							required
+						/>
+					</label>
+					<label for="email" id="email-label">
+						• Email
+						<span>*</span>
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="exemple@email.com"
+							required
+						/>
+					</label>
+					<label for="numero" id="numero-label">
+						• Téléphone
+						<input
+							type="tel"
+							name="numero"
+							id="numero"
+							placeholder="0607080910"
+						/>
+					</label>
+					<label for="message" id="message-label">
+						<p>
+							• Message
+							<span>*</span>
+						</p>
+						<textarea
+							name="message"
+							id="message"
+							cols="30"
+							rows="10"
+							placeholder="Entrez votre message :"
+							required
+						></textarea>
+					</label>
+					<button type="submit">
+						Envoyer
+						<ion-icon name="send-outline"></ion-icon>
+					</button>
+				</form>
+			</div>
+		</main>
 		<footer>
 			<div id="links">
 				<a
@@ -107,7 +153,10 @@
 			</div>
 			<p>© 2021 Léo Roullois</p>
 		</footer>
-
+		<script
+			type="text/javascript"
+			src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+		></script>
 		<script
 			type="module"
 			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
